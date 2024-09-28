@@ -1,7 +1,6 @@
 function updateClock() {
     const timeDisplay = document.getElementById('time');
     const now = new Date();
-}
 
 let hours = now.getHours();
 let minutes = now.getMinutes();
@@ -12,6 +11,7 @@ minutes = minutes < 10 ? `0${minutes}` : minutes;
 seconds = seconds < 10 ? `0${seconds}` : seconds;
 
 timeDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+};
 
 setInterval(updateClock, 1000);
 
